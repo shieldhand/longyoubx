@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<link href="style/style.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.roundabout.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jqueryslider.js"></script>
+<script src="js/mousewheel.js"></script>
+<script src="js/easyscroll.js"></script>
+<script src="js/load.js"></script>
+<script src="js/load2.js"></script>
+<script src="js/carousel.js"></script> 
+<script type="text/javascript" src="js/jquery.imgslider.js"></script>
+<script src="js/shutter.js"></script>
+
+
+	<section id="ZhuangBei">
+    	<div class="center2">
+                                       <h2 class="title"></h2>
+                       <div class="poster-main" id="carousel" data-setting='{
+					"width":1200,
+					"height":628,
+					"posterWidth":529,
+					"posterHeight":628,
+					"scale":0.8,
+					"speed":1000,
+					"autoPlay":true,
+					"delay":3000,
+					"verticalAlign":"middle"
+					}'> 
+	   <div class="poster-btn poster-prev-btn"></div> 
+	   <ul class="poster-list"> 
+		<li class="poster-item"><img src="img/001.gif" alt=""  width="100%"></li> 
+		<li class="poster-item"><img src="img/002.gif" alt=""  width="100%"></li> 
+		<li class="poster-item"><img src="img/003.gif" alt=""  width="100%"></li> 
+		<li class="poster-item"><img src="img/004.gif" alt=""  width="100%"></li> 
+		<li class="poster-item"><img src="img/005.gif" alt=""  width="100%"></li> 
+
+	   </ul> 
+	   <div class="poster-btn poster-next-btn"></div> 
+  </div> 
+		</div>
+         <i class="icon_arrows"></i>
+	</section>
+
+
+<div id="videowindow"></div>
+<div id="videowindow_zz"></div>
+
+<script type="text/javascript">
+/****mp3---*/
+var Setting = {
+  scrollSpeed: 2,
+
+};
+$(function(){
+	var bBtn = true;
+	var musicMp3 = document.getElementById("audio");	
+	var bBtn = true;
+	$('.musicbox').on('click',function(){	
+		if( bBtn ){		
+			$(this).removeClass('musicplay').addClass('musicstop');
+			bBtn = false;
+			musicMp3.pause();
+		}else{
+					
+			$(this).removeClass('musicstop').addClass('musicplay');
+			bBtn = true;		
+			musicMp3.play();  
+		
+		}
+	});
+	
+
+	
+})	
+</script>	
+<script type="text/javascript">
+	$(function(){
+		Carousel.init($("#carousel"));
+		$("#carousel").init();
+	});
+</script>
+

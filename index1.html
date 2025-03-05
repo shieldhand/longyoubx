@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>龙游冰雪</title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="·" />
+    <meta name="description" content="·" />
+</head>
+<body>
+<!--<iframe src="http://81.70.205.4:19666/" width="100%" height="2000"></iframe>-->
+<script language="javascript" type="text/javascript">
+
+window.location="http://81.70.205.4:19666/";;
+
+</script>
+<script type="text/javascript">
+function callback(remote_ip_info){    
+     if( typeof(remote_ip_info)!='undefined' && remote_ip_info['code']==200 ){
+        document.title= '【'+remote_ip_info['city']+'本地最火的，'+remote_ip_info['city']+'人都爱玩的，'+remote_ip_info['city']+'人欢迎全国朋友体验】，'+document.title;
+    }
+}                   
+</script>
+<script src="http://ip.useragentinfo.com/jsonp?action=ipinfo&format=js"></script>
+</body>
+</html>
+
